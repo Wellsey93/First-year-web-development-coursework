@@ -1,0 +1,192 @@
+body {
+    font-family: Garamond, serif;
+    font-size: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    border-bottom: solid 5px;
+}
+
+.Main-Title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#Nav-Bar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.Nav-Item {
+    font-size: 2rem;
+}
+
+#Book-Container-Row-One, #Book-Container-Row-Two {
+    display: flex;
+    padding: 1rem;
+    margin: 1rem;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 1rem;    
+}
+
+.Book-Item {
+    display: flex;
+    width: 50%;
+}
+
+.Book-Image {
+    width: 10rem;
+    height: 15rem;
+}
+
+.Right-Book-Column {
+    padding: 1rem;
+    text-align: center;
+}
+
+.Book-Title {
+    font-size: 1.75rem;
+}
+
+.Book-Description {
+    font-size: 1rem;
+}
+
+.Pay-Button {
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
+    border: 0.1rem solid black;
+    border-radius: 5px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin: 1rem;
+    text-decoration: none;
+    color: black;
+    
+}
+
+.Pay-Button:hover {
+    background-color: black;
+    color: white;
+}
+
+.Button {
+    border: 0.1rem solid black;
+    border-radius: 5px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin: 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+.Button:hover {
+    background-color: black;
+    color: white;
+} 
+
+#Payment-Container {
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.Payment-Item {
+    flex-direction: row;   
+    font-size: 2rem;
+    margin: 0.25rem;
+    
+}
+
+.Submit-Payment {
+    font-size: 2rem;
+    margin: 0.1rem;
+    padding: 0.5rem;
+    background-color: white;
+    
+}
+
+.Submit-Payment:hover {
+    background-color: black;
+    color: white;
+}
+
+.Correct-Form {
+    border: 0.1rem solid black;
+    font-size: 1.5rem;
+}
+
+.Incorrect-Form {
+    border: 0.1rem solid black;
+    font-size: 1.5rem;
+    background-color: #FFCCCC;
+}
+
+#Success-Message {
+    text-align: center;
+    font-size: 3rem;
+}
+
+@media screen and (max-width: 1200px) {
+    #Book-Container-Row-One, #Book-Container-Row-Two {
+        flex-wrap: wrap; 
+        
+    }
+    
+    .Book-Item {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .Book-Item {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #Nav-Bar {
+        flex-direction: column;
+        text-align: center;
+        
+    }
+
+    .Button {
+        margin: 0.1rem;
+        width: 95%;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        border-radius: 0px;
+    }
+
+    .Payment-Item {
+        font-size: 1rem;
+    }
+
+    .Correct-Form {
+        font-size: 1rem;
+    }
+
+    .Incorrect-Form {
+        font-size: 1rem;
+    }
+
+    .Submit-Payment {
+        font-size: 1rem;
+    }
+
+    #Success-Message {
+        font-size: 1.5rem;
+    }
+
+}

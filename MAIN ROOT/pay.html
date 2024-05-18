@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="css\\style.css">
+    <script src="js\\PaymentValidation.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="Main-Title">The bookshop</h1>
+        <div id="Nav-Bar">
+            <a class="Button" class="Nav-Item"  href="#">About us</a>
+            <a class="Button" class="Nav-Item" href="index.html">Home</a>
+            <a class="Button" class="Nav-Item" href="#">Contact us</a>
+        </div>
+    </header>
+    <h2 class="Main-Title">Payment</h2>
+
+    <form id="Payment-Container">
+        <div class="Payment-Item">
+            <label for="Card-Number">Card Number</label>
+            <input type="text" class="Correct-Form" id="Card-Number" name="Card-Number">
+        </div>
+        <div class="Payment-Item">
+            <label for="Exp-Month">Expiration Date</label>
+            <select name="Exp-Month" class="Correct-Form" id="Exp-Month">
+                <option selected disabled hidden>Month</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+            
+            <select name="Exp-Year" class="Correct-Form" id="Exp-Year">
+                <option selected disabled hidden>Year</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+                <option value="2030">2030</option>
+            </select>
+        </div>
+        <div class="Payment-Item">
+            <label for="CVV">CVV Code</label>
+            <input type="text" class="Correct-Form" id="CVV" name="CVV">
+        </div>
+        <input class="Submit-Payment" type="submit" value="Continue" id="Submit">
+        
+        
+            
+    </form>
+
+
+
+</body>
+</html>
